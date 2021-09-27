@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+h1, h2, h3{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    font-size: 4.7rem;
+    line-height: 58px;
+}
+
+.icon-text-btn{
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+}
+
+.icon-text-btn img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
