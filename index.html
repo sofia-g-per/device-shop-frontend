@@ -5,28 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device</title>
-    <link rel="stylesheet" href="assets/fonts/gilroyextrabold.woff">
-    <link rel="stylesheet" href="assets/fonts/gilroyextrabold.woff2">
-    <link rel="stylesheet" href="assets/fonts/gilroylight.woff">
-    <link rel="stylesheet" href="assets/fonts/gilroylight.woff2">
-    <link rel="stylesheet" href="assets/fonts/opensans.woff">
-    <link rel="stylesheet" href="assets/fonts/opensans.woff2">
-    <link rel="stylesheet" href="assets/fonts/opensanslight.woff">
-    <link rel="stylesheet" href="assets/fonts/opensanslight.woff2">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/queries.css">
 </head>
 <body>
     <header class="header container">
-        <h1 class="heading-primary">device</h1>
+        <img src="assets/images/icons/logo.svg" alt="Логотип Device" class="logo">
         <div class="icon-text-btn">
         <img src="assets/images/icons/icon_search.svg" alt="">
             <input class="search-bar" type="text" placeholder="Поиск по сайту">
         </div>
         <nav class="user-nav">
             <a class="icon-text-btn" href="#">
-                <img src="assets/images/icons/icon_user.svg" alt="">
+                <img src="assets/images/icons/icon_user.svg" alt="Иконка человека">
                 <p>Войти</p>
             </a>
             <a class="icon-text-btn" href="#">
@@ -38,8 +30,9 @@
                 <p>Корзина</p>
             </a>
         </nav>
-        <a href="#" class="site-nav--link">
-            каталог товаров
+        <a class="icon-text-btn" href="#">
+            <p class="site-nav--link">каталог товаров</p>
+            <img src="assets/images/icons/icon_plus.svg" alt="Плюс">
         </a>
         <nav class="site-nav">
             <a href="#" class="site-nav--link">
@@ -62,7 +55,31 @@
         </div>
     </header>
     <main>
-
+        <section class="products container">
+            <div class="product">
+                <div class="product-header">
+                    <hr class="line line--white">
+                    <p class="product-num">03</p>
+                </div>
+                <img class="product-image" src="assets/images/products/slider-3 1.png" alt="Дрон с лазерным лучём">
+                <h2 class="heading-secondary">Порхает как бабочка,<br> жалит как пчела!</h2>
+                <p class="product-description">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                    мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a href="#" class="product-btn">подробнее</a>
+                <ul class="product-features">
+                    <li class="product-feature">
+                        <p class="feature-number">800 м</p>
+                        <p class="feature-text">Дальность полёта</p>
+                    </li>
+                    <li class="product-feature">
+                        <p class="feature-number">50 м</p>
+                        <p class="feature-text">Радиус поражения</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer class="footer">
 
