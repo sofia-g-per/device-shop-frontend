@@ -108,7 +108,7 @@ HEADER
     padding: 1rem 0;
 }
 
-.categories{
+.categories-nav{
     opacity: 0;
     display: hidden;
     pointer-events: none;
@@ -127,7 +127,7 @@ HEADER
     pointer-events: all;
 }
 
-.category:last-child{
+.category-link:last-child{
     grid-column: 3 / span 1;
 }
 
@@ -201,4 +201,25 @@ PRODUCTS
 
 .feature-text{
     font-size: 1.3rem;
+}
+
+/* 
+========================
+POPULAR
+========================
+*/
+.section-popular{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4rem;
+}
+
+.popular--img-wrapper{
+    width: 16rem;
+    height: 16rem;
+    background-color: #F7E296;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
