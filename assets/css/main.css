@@ -223,3 +223,76 @@ POPULAR
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
+
+/* 
+========================
+SERVICES
+========================
+*/
+.section-services{
+    background: linear-gradient(to top, #E5E5E5 67%, transparent 67%);
+}
+
+.services-list,
+.services{
+    padding: 7rem 0;
+}
+
+.services-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 12.3rem;
+}
+
+.services-list{
+    border-right: solid 0.7rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-btn{
+    display: block;
+    min-width: 16rem;
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 1.5rem 0;
+    margin-right: 11.7rem;
+    background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
+}
+
+.services-btn:hover,
+.services-btn:active,
+.services-btn--active{
+    background: black;
+    width: calc(100% + 0.7rem);
+    color: #F7E296;
+    text-align: left;
+    padding-left: 2.4rem;
+}
+
+.service{
+    display: none;
+}
+
+.service--active{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 12.7rem;
+}
+
+.service-img{
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+}
+
+.service-description{
+    max-width: 50ch;
+    line-height: 3rem;
+}
