@@ -94,3 +94,43 @@ img{
 .line--white{
     background-color: white;
 }
+
+.active-underline{
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+}
+
+.active-underline::after,
+.active-underline.underline--tb::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0rem;
+    background-color: #F0C52E;
+    z-index: -1;
+    transition: all 0.2s;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.active-underline::after{
+    bottom: 0;
+}
+.active-underline.underline--tb::before{
+    top: 0;
+}
+
+.active-underline:hover::after,
+.active-underline:active::after,
+.active-underline:focus::after,
+.active-underline.underline--tb:hover::before,
+.active-underline.underline--tb:active::before,
+.active-underline.underline--tb:focus::before{
+    height: 0.5rem;
+}
+
+
+
