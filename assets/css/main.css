@@ -187,11 +187,10 @@ PRODUCTS
     padding: 0 4.2rem;
     margin: 3rem 0;
     position: relative;
-
-    /* background: linear-gradient(to bottom, transparent , #F0C52E, transparent); */
 }
 
-.product-btn::before{
+.product-btn::before,
+.product-btn::after{
     content: "";
     display: block;
     width: 100%;
@@ -208,8 +207,14 @@ PRODUCTS
 
 .product-btn:hover::before,
 .product-btn:active::before{
-    height: 100%;
-    /* box-shadow: 0 0 5px 5px #F0C52E; */
+    height: 0.5rem;
+    top: -30%;
+}
+
+.product-btn:hover::after,
+.product-btn:active::after{
+    height: 0.5rem;
+    top: 130%;
 }
 
 .product-features{
