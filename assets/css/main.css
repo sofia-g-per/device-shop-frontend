@@ -245,7 +245,7 @@ SERVICES
 }
 
 .services-list{
-    border-right: solid 0.7rem black;
+    border-right: solid 0.8rem black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,14 +261,36 @@ SERVICES
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 
     padding: 1.5rem 0;
     margin-right: 11.7rem;
     background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
+    isolation: isolate;
+    z-index: 0;
+    position: relative;
 }
 
-.services-btn:hover,
-.services-btn:active,
+.services-btn:not(.services-btn--active)::before{
+    position: absolute;
+    content: "";
+    background: #F0C52E;
+    width: 100%;
+    height: 13%;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+.services-btn:not(.services-btn--active):hover::before{
+    /* height = line height */
+    height: 2.2rem;
+    /* 100% + padding */
+    width: calc(100% + 11.7rem);
+    transform: translate(0%, -50%);
+}
+
 .services-btn--active{
     background: black;
     width: calc(100% + 0.7rem);
