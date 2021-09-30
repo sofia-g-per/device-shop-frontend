@@ -324,3 +324,42 @@ SERVICES
 ABOUT US + CONTACTS
 ========================
 */
+.section-about-us{
+    display: flex;
+    gap: 12.7rem;
+    position: relative;
+}
+ 
+.about-us__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    line-height: 2.8rem;
+}
+
+.about-us__column h2{
+    margin: 1rem 0;
+}
+
+.about-us__list{
+    margin: 2rem 0;
+}
+.about-us__list li{
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.map-pop-up{
+    display: none;
+}
+
+.map-pop-up.pop-up--active{
+    position: absolute;
+    width: 66vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}

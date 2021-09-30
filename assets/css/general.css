@@ -113,13 +113,18 @@ img{
 
 .heading-secondary{
     font-size: 4.7rem;
-    line-height: 5rem;
+    line-height: 5.8rem;
 }
 
 .heading-quaternary{
     font-size: 1.8rem;
     line-height: 2.2rem;
     letter-spacing: 0.05em;
+}
+
+.list li{
+    display: flex;
+    gap: 2.4rem;
 }
 
 /* горизонтальная линия-выделитель */
