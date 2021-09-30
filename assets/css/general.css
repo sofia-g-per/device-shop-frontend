@@ -127,7 +127,7 @@ img{
 
 input,
 textarea{
-    background-color: #F2F2F2;
+    background-color: transparent;
     padding: 1.6rem;
     border: none;
     font-family: 'Open Sans', sans-serif;
@@ -186,16 +186,40 @@ textarea{
     background-color: white;
 }
 
+.line--yellow{
+    background-color: #F0C52E;
+}
+
 /* КНОПКИ */
-.icon-text-btn{
+.icon-text-btn,
+.text-icon-btn{
     display: flex;
     gap: 1.1rem;
     align-items: center;
 }
 
-.icon-text-btn img{
+.icon-text-btn::before,
+.text-icon-btn::after{
+    content: "";
     width: 1.6rem;
     height: 1.6rem;
+    background-repeat: no-repeat;
+
+}
+.icon-text-btn.login-btn::before{
+    background-image: url("/assets/images/icons/icon_user.svg");
+}
+.icon-text-btn.compare-btn::before{
+    background-image: url("/assets/images/icons/icon_chart.svg");
+}
+.icon-text-btn.cart-btn::before{
+    background-image: url("/assets/images/icons/icon_cart.svg");
+}
+
+.text-icon-btn.plus-btn::after{
+    background-image: url("/assets/images/icons/icon_plus.svg");
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
 .line-through-btn{
@@ -248,7 +272,7 @@ textarea{
     width: fit-content;
 }
 
-.active-underline::after,
+.active-underline::before,
 .active-underline.underline--tb::before{
     content: "";
     display: block;
@@ -263,16 +287,16 @@ textarea{
     transform: translate(-50%, -50%);
 }
 
-.active-underline::after{
+.active-underline::before{
     bottom: 0;
 }
 .active-underline.underline--tb::before{
     top: 0;
 }
 
-.active-underline:hover::after,
-.active-underline:active::after,
-.active-underline:focus::after,
+.active-underline:hover::before,
+.active-underline:active::before,
+.active-underline:focus::before,
 .active-underline.underline--tb:hover::before,
 .active-underline.underline--tb:active::before,
 .active-underline.underline--tb:focus::before{
