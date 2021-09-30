@@ -206,21 +206,6 @@ textarea{
     background-repeat: no-repeat;
 
 }
-.icon-text-btn.login-btn::before{
-    background-image: url("/assets/images/icons/icon_user.svg");
-}
-.icon-text-btn.compare-btn::before{
-    background-image: url("/assets/images/icons/icon_chart.svg");
-}
-.icon-text-btn.cart-btn::before{
-    background-image: url("/assets/images/icons/icon_cart.svg");
-}
-
-.text-icon-btn.plus-btn::after{
-    background-image: url("/assets/images/icons/icon_plus.svg");
-    width: 2.2rem;
-    height: 2.2rem;
-}
 
 .line-through-btn{
     font-family: 'Gilroy', sans-serif;
