@@ -131,37 +131,37 @@
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-1.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Виртуальная реальность</h4>
+                <h4 class="strong">Виртуальная реальность</h4>
             </a>
             <a href="#" class="popular--item">
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-2.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Моноподы для селфи</h4>
+                <h4 class="strong">Моноподы для селфи</h4>
             </a>
             <a href="#" class="popular--item">
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-3.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Экшн-камеры</h4>
+                <h4 class="strong">Экшн-камеры</h4>
             </a>
             <a href="#" class="popular--item">
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-4.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Фитнес-браслеты</h4>
+                <h4 class="strong">Фитнес-браслеты</h4>
             </a>
             <a href="#" class="popular--item">
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-5.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Умные часы</h4>
+                <h4 class="strong">Умные часы</h4>
             </a>
             <a href="#" class="popular--item">
                 <div class="popular--img-wrapper">
                     <img class="popular--img" src="assets/images/popular/popular-6.png" alt="">
                 </div>
-                <h4 class="heading-quaternary">Квадракоптеры</h4>
+                <h4 class="strong">Квадракоптеры</h4>
             </a>
         </section>
         <section class="section-services">
@@ -208,6 +208,14 @@
                 </div>
             </div>
         </section>
+        <section class="logos container">
+            <div class="logos-container">    
+                <img src="assets/images/logos/logo-1.png" alt="Логотип">
+                <img src="assets/images/logos/logo-2.png" alt="Логотип">    
+                <img src="assets/images/logos/logo-3.png" alt="Логотип">    
+                <img src="assets/images/logos/logo-4.png" alt="Логотип">
+            </div>
+        </section>
         <section class="section-about-us container">
             <div class="about-us__column">
                 <hr class="line">
@@ -223,15 +231,15 @@
                 <ul class="about-us__list list">
                     <li class="about-us__list-item">
                         <img src="assets/images/icons/list-icon.svg">
-                        <p>Деловые линии</p>
+                        <p class="strong">Деловые линии</p>
                     </li>
                     <li class="about-us__list-item">
                         <img src="assets/images/icons/list-icon.svg">
-                       <p> Автотрейдинг</p>
+                       <p class="strong"> Автотрейдинг</p>
                     </li>
                     <li class="about-us__list-item">
                         <img src="assets/images/icons/list-icon.svg">
-                        <p>ЖелДорЭкспедиция</p>
+                        <p class="strong">ЖелДорЭкспедиция</p>
                     </li>
                 </ul>
                 <button class="line-through-btn">Подробнее о нас</button>
@@ -246,8 +254,26 @@
                 <img class="contact-us__map" src="assets/images/contact-us/map_small.png" alt="Адрес: улица Строителей, 15">
                 <button class="line-through-btn">Напишите нам</button>
             </div>
-            <div class="map-pop-up">
+            <div class="pop-up">
                 <img src="assets/images/contact-us/map_popup.png" alt="Адрес: улица Строителей, 15">
+            </div>
+            <div class="form-pop-up pop-up pop-up--active">
+                <img  class="x-btn" src="assets/images/contact-us/button_close.svg" alt="Кнопка для закрытия">
+                <form action="post" class="contact-us__form">
+                    <div class="form__item">
+                        <p class="form__label strong">Ваше имя:</p>
+                        <input type="text" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="form__item">
+                        <p class="form__label strong">Ваш e-mail:</p>
+                        <input type="text" placeholder="email@example.com">
+                    </div>
+                    <div class="form__item form_textarea">
+                        <p class="form__label strong">Текст письма:</p>
+                        <textarea name="" id="" cols="30" rows="10">В свободной форме</textarea>
+                    </div>
+                    <button class="line-through-btn">Отправить</button>
+                </form>
             </div>
         </section>
     </main>

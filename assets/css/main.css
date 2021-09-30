@@ -324,6 +324,16 @@ SERVICES
 ABOUT US + CONTACTS
 ========================
 */
+.logos-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 
+========================
+ABOUT US + CONTACTS
+========================
+*/
 .section-about-us{
     display: flex;
     gap: 12.7rem;
@@ -351,15 +361,26 @@ ABOUT US + CONTACTS
     font-size: 1.8rem;
 }
 
-.map-pop-up{
-    display: none;
+.form-pop-up{
+    background-color: white;
+    box-shadow: 0px 1rem 1.6rem rgba(0, 0, 0, 0.15);
 }
 
-.map-pop-up.pop-up--active{
-    position: absolute;
-    width: 66vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+.contact-us__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 3.2rem;
+
+    margin: 0 8rem;
 }
+
+.contact-us__form .form_textarea{
+    grid-column: span 2;
+}
+
+/* 
+========================
+FOOTER
+========================
+*/

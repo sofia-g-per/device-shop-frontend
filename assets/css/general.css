@@ -104,7 +104,46 @@ img{
     width: 81vw;
 }
 
+.pop-up{
+    display: none;
+}
 
+.pop-up.pop-up--active{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    padding: 2rem;
+    width: 66vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.x-btn{
+    align-self: flex-end;
+}
+
+input,
+textarea{
+    background-color: #F2F2F2;
+    padding: 1.6rem;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+textarea{
+    max-height: 30rem;
+}
+
+.form__item .form__label{
+    margin-bottom: 1rem;
+}
 /* .heading-primary{
     text-transform: uppercase;
     font-size: 4.7rem;
@@ -116,10 +155,18 @@ img{
     line-height: 5.8rem;
 }
 
-.heading-quaternary{
+.strong{
     font-size: 1.8rem;
+    font-weight: 800;
+    font-family: Gilroy, sans-serif;
     line-height: 2.2rem;
     letter-spacing: 0.05em;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .list li{
