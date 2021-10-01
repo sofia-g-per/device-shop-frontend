@@ -411,7 +411,12 @@ FOOTER
 }
 
 .footer *{
-    color: rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+.footer__phone,
+.footer__address{
+    opacity: 0.7;
 }
 
 .footer .site-nav,
@@ -422,11 +427,6 @@ FOOTER
 .footer .site-nav{
     display: flex;
     gap: 3.6rem;
-}
-
-.footer .site-nav *{
-    color: rgba(255, 255, 255, 1);
-
 }
 
 .footer .socials-list{
