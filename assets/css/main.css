@@ -84,7 +84,7 @@ HEADER
     height: 2.2rem;
 }
 
-.user-nav a:hover{
+/* .user-nav a:hover{
     font-weight: 800;
 }
 
@@ -101,7 +101,7 @@ HEADER
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-}
+} */
 
 .site-nav{
     gap: 3.8rem;
