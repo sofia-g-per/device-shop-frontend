@@ -230,7 +230,23 @@ POPULAR
     gap: 4rem;
 }
 
-.popular--img-wrapper{
+.popular__item *{
+    transition: all 0.5s;
+}
+
+.popular__item:hover .popular__img-wrapper{
+    background-color: #F0C52E;
+}
+
+.popular__item:active .popular__img-wrapper{
+    background-color: #F0C52E;
+}
+.popular__item:active .popular__img-wrapper img,
+.popular__item:active h4.strong{
+    opacity: 0.3;
+}
+
+.popular__img-wrapper{
     width: 16rem;
     height: 16rem;
     background-color: #F7E296;
