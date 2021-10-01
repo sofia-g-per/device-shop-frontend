@@ -194,7 +194,9 @@ textarea{
 .fade-out-btn{
     transition: all 0.5s;
 }
-.fade-out-btn:hover{
+
+.fade-out-btn:hover,
+.fade-out-btn:target{
     opacity: 0.6;
 }
 
@@ -207,14 +209,14 @@ textarea{
     transition: all 0.5s;
 }
 
-.fade-in-btn:hover{
+.fade-in-btn:hover,
+.fade-in-btn:target{
     opacity: 1;
 }
 
 .fade-in-btn:active{
     opacity: 0.3;
 }
-
 
 .icon-text-btn,
 .text-icon-btn{

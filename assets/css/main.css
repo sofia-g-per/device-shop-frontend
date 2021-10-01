@@ -234,7 +234,8 @@ POPULAR
     transition: all 0.5s;
 }
 
-.popular__item:hover .popular__img-wrapper{
+.popular__item:hover .popular__img-wrapper,
+.popular__item:target .popular__img-wrapper{
     background-color: #F0C52E;
 }
 
@@ -359,6 +360,17 @@ ABOUT US + CONTACTS
 .logos-container{
     display: flex;
     justify-content: space-around;
+}
+
+.logos-container>img{
+    transition: all 0.5s;
+    filter: saturate(0);
+    opacity: 0.15;
+}
+
+.logos-container>img:hover{
+    filter: saturate(1);
+    opacity: 1;
 }
 
 /* 
