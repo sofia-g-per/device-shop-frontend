@@ -249,8 +249,7 @@ textarea{
     isolation: isolate;
 }
 
-.line-through-btn::before,
-.line-through-btn::after{
+.line-through-btn::before{
     content: "";
     display: block;
     width: 100%;
@@ -265,7 +264,15 @@ textarea{
     transform: translate(-50%, -50%);
 }
 
-.line-through-btn:hover::before,
+.line-through-btn:hover::before{
+    height: 100%;
+}
+
+.line-through-btn:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* .line-through-btn:hover::before,
 .line-through-btn:active::before{
     height: 0.5rem;
     top: -30%;
@@ -275,10 +282,10 @@ textarea{
 .line-through-btn:active::after{
     height: 0.5rem;
     top: 130%;
-}
+} */
 
 /* подчёркивание (нижнее и верхнее) при наведении */
-.active-underline{
+/* .active-underline{
     position: relative;
     isolation: isolate;
     width: fit-content;
@@ -297,9 +304,9 @@ textarea{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.active-underline::before{
+/* .active-underline::before{
     bottom: 0;
 }
 .active-underline.underline--tb::before{
@@ -313,7 +320,30 @@ textarea{
 .active-underline.underline--tb:active::before,
 .active-underline.underline--tb:focus::before{
     height: 0.5rem;
+} */
+
+/* ЭЛЕМЕНТЫ С HOVER */
+.form__field{
+    transition: all 0.5s;
+    background-color: #F2F2F2;
+    color: rgba(0, 0, 0, 0.4);
 }
 
+.form__field:hover{
+    background-color: #EAEAEA;
+}
 
+.form__field:focus{
+    background-color: white;
+    outline: solid 1px #F0C52E;
+}
+
+.form__field:focus::placeholder{
+    color: rgba(0, 0, 0, 1);
+}
+
+.form__field.field--error{
+    background-color: #F6DADA;
+    outline: none;
+}
 

@@ -12,7 +12,10 @@
 <body>
     <header class="header container">
         <img  class="logo fade-out-btn" src="assets/images/icons/logo.svg" alt="Логотип Device">
-        <input class="search-bar active-underline" type="text" placeholder="Поиск по сайту">
+        <form class="search-bar-wrapper" action="get">
+            <input class="search-bar" class="search-bar active-underline" type="text" placeholder="Поиск по сайту">
+            <button class="search-btn">найти</button>
+        </form>
         <nav class="user-nav">
             <a class="icon-text-btn fade-out-btn login-btn" href="#">
                 Войти
@@ -255,15 +258,15 @@
                 <form action="post" class="contact-us__form">
                     <div class="form__item">
                         <p class="form__label strong">Ваше имя:</p>
-                        <input type="text" placeholder="Имя Фамилия">
+                        <input class="form__field" type="text" placeholder="Имя Фамилия">
                     </div>
                     <div class="form__item">
                         <p class="form__label strong">Ваш e-mail:</p>
-                        <input type="text" placeholder="email@example.com">
+                        <input class="form__field" type="text" placeholder="email@example.com">
                     </div>
                     <div class="form__item form_textarea">
                         <p class="form__label strong">Текст письма:</p>
-                        <textarea name="" id="" cols="30" rows="10">В свободной форме</textarea>
+                        <textarea class="form__field" name="text" id="text" placeholder="В свободной форме" cols="30" rows="10"></textarea>
                     </div>
                     <button class="line-through-btn">Отправить</button>
                 </form>
