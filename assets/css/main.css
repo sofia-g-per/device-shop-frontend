@@ -209,6 +209,20 @@ HEADER
 
 .btn-mobile-nav{
     display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    justify-self: right;
+}
+
+.icon-mobile-nav{
+    width: 4.8rem;
+    height: 4.8rem;
+    color: black;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
 }
 /* 
 ========================
@@ -216,9 +230,9 @@ PRODUCTS
 ========================
 */
 
-/* .section-products *{
-    z-index: -1;
-} */
+.section-products *{
+    margin-bottom: 0;
+} 
 
 .product{
     display: none;
