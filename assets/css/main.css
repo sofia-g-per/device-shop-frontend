@@ -107,6 +107,8 @@ HEADER
 .header nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* width: 100%; */
+    /* justify-content: center; */
 }
 
 .user-nav{
@@ -130,7 +132,11 @@ HEADER
     background-image: url("/assets/images/icons/icon_cart.svg");
 }
 
-.header .text-icon-btn.plus-btn::after{
+.header .plus-btn{
+    white-space: nowrap;
+}
+
+.header .plus-btn::after{
     background-image: url("/assets/images/icons/icon_plus.svg");
     width: 2.2rem;
     height: 2.2rem;
@@ -280,6 +286,7 @@ PRODUCTS
 
 .feature-text{
     font-size: 1.3rem;
+    white-space: nowrap;
 }
 
 /* 
@@ -291,6 +298,8 @@ POPULAR
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 4rem;
+    justify-items: center;
+    width: fit-content;
 }   
 
 .popular__item *{
@@ -339,9 +348,9 @@ SERVICES
 
 .services-wrapper{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 4fr;
     justify-items: start;
-    gap: 12.3rem;
+    gap: 11.6rem;
 }
 
 .services-list{

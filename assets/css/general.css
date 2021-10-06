@@ -61,8 +61,8 @@ body{
     overflow-x: hidden;
 }
 
-main>section:not(:last-child){
-    margin-bottom: 7.6rem;
+main>section{
+    margin-bottom: 7.6rem !important;
 }
 
 h1, h2, h3, h4{
@@ -241,6 +241,7 @@ textarea{
     line-height: 2.2rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    white-space: nowrap;
 
     width: fit-content;
     padding: 0 4.2rem;
