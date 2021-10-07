@@ -376,7 +376,7 @@ SERVICES
 
 .services-btn{
     display: block;
-    min-width: 16rem;
+    width: 33%;
     font-family: Gilroy, sans-serif;
     font-weight: 800;
     font-size: 1.8rem;
@@ -387,18 +387,22 @@ SERVICES
     cursor: pointer;
 
     padding: 1.5rem 0;
-    margin-right: 11.7rem;
-    background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
     isolation: isolate;
     z-index: 0;
     position: relative;
 }
 
+.services-btn p{
+    width: min-content;
+    background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
+}
+
 .services-btn:not(.services-btn--active)::before{
     position: absolute;
+    visibility: hidden;
     content: "";
     background: #F0C52E;
-    width: 100%;
+    width: 0.3rem;
     height: 13%;
     top: 50%;
     left: 0%;
@@ -406,20 +410,23 @@ SERVICES
     z-index: -1;
 }
 .services-btn:not(.services-btn--active):hover::before{
+    visibility: visible;
     height: 2.2rem;
-    width: calc(100% + 11.7rem);
+    width: 100%;
     transform: translate(0%, -50%);
 }
 
 .services-btn:active,
 .services-btn--active{
     background: black;
-    width: calc(100% + 0.7rem);
+    width: 100%;
     color: #F7E296;
     text-align: left;
     padding-left: 2.4rem;
 }
 
+.services-btn:active p,
+.services-btn--active p,
 .services-btn:active::before{
     background: none;
 }
