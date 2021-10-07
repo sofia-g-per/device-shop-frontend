@@ -387,7 +387,6 @@
 
     .services-btn:active, 
     .services-btn--active {
-        width: auto;
         padding: 0 2rem;
     }
 

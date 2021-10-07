@@ -372,11 +372,12 @@ SERVICES
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 20vw;
 }
 
 .services-btn{
     display: block;
-    width: 33%;
+    width: 100%;
     font-family: Gilroy, sans-serif;
     font-weight: 800;
     font-size: 1.8rem;
@@ -386,7 +387,6 @@ SERVICES
     text-transform: uppercase;
     cursor: pointer;
 
-    padding: 1.5rem 0;
     isolation: isolate;
     z-index: 0;
     position: relative;
@@ -394,6 +394,7 @@ SERVICES
 
 .services-btn p{
     width: min-content;
+    padding: 1rem;
     background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
 }
 
@@ -422,7 +423,6 @@ SERVICES
     width: 100%;
     color: #F7E296;
     text-align: left;
-    padding-left: 2.4rem;
 }
 
 .services-btn:active p,
