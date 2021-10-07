@@ -19,10 +19,18 @@ HEADER
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-
-    background: linear-gradient(to top, #F7E296 85%, transparent 85%);
+    position: relative;
+    
     padding: 4.4rem 6rem;
     z-index: -1;
+
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, #F7E296 85%, transparent 85%);
+    z-index: -2;
 }
 
 .header>*{
@@ -93,16 +101,6 @@ HEADER
 .search-btn:active{
     color: rgba(255, 255, 255, 0.3);
 }
-
-/* .search-bar:hover,
-.search-bar:focus{
-    outline: none;
-    opacity: 1;
-    background: url("/assets/images/icons/icon_search.svg"), #F8E6A6;
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    box-shadow: 0 0 8px 1px #f8e6a6;
-} */
 
 .header nav{
     display: grid;
@@ -196,7 +194,11 @@ HEADER
     background: #F7E296;
 }
 
-.categories--active{
+.header.categories--active{
+    z-index: 10;
+}
+
+.header.categories--active .categories-nav{
     opacity: 1;
     display: visible;
     pointer-events: all;
