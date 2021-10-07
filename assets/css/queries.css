@@ -1,4 +1,4 @@
-@media (max-width: 1100px){
+@media (max-width: 1150px){
     .header{
         background: linear-gradient(to top, #F7E296 90%, transparent 90%);
     }
@@ -370,16 +370,7 @@
     }
 
     .popular__item{
-        width: 11rem;
         word-wrap: break-word;
-    }
-
-    .popular__img-wrapper{
-        height: 11rem;
-    }
-
-    .popular__img-wrapper img{
-        transform: scale(0.7);
     }
 
     /* SERVICES */
@@ -470,6 +461,22 @@
 
     .footer .html-logo{
         grid-column: 2;
+    }
+
+}
+
+@media (max-width: 400px){
+    .popular__img-wrapper{
+        height: 11rem;
+    }
+
+    .popular__item{
+        width: 11rem;
+    }
+
+    
+    .popular__img-wrapper img{
+        transform: scale(0.7);
     }
 
 }
