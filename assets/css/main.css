@@ -136,10 +136,10 @@ HEADER
     white-space: nowrap;
 }
 
-.header .plus-btn::after{
-    background-image: url("/assets/images/icons/icon_plus.svg");
-    width: 2.2rem;
-    height: 2.2rem;
+.header .plus-btn{
+    background: url("/assets/images/icons/icon_plus.svg") right no-repeat;
+    width: fit-content;
+    padding-right: 3rem;
 }
 
 /* .user-nav a:hover{
