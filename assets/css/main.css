@@ -63,7 +63,7 @@ PRODUCTS
     grid-row: 1;
     grid-column: 2;
     align-self: end;
-    margin-top: 11rem;
+    padding-top: 11rem;
 }
 
 .product-description{

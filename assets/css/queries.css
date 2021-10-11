@@ -250,39 +250,39 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .footer .user-nav,
-    .footer .site-nav{
+    .footer__user-nav,
+    .footer__site-nav{
         grid-column: 1 / -1;
         justify-self: center;
         justify-items: center;
     }
 
-    .footer .user-nav{
+    .footer__user-nav{
         grid-row: 2;
     }
 
-    .footer .site-nav{
+    .footer__site-nav{
         grid-row: 3;
     }
 
-    .footer .footer__phone,
-    .footer .footer__address{
+    .footer__phone,
+    .footer__address{
         grid-row: 4 / span 2;
         justify-self: left;
         grid-column: span 2;
     }
 
-    .footer .footer__phone{
+    .footer__phone{
         justify-self: right;
         text-align: right;
     }
 
-    .footer .socials-list{
+    .footer__socials-list{
         grid-row: 4;
         grid-column: 3;
     }
 
-    .footer .html-logo{
+    .footer__html-logo{
         grid-column: -1;
     }
 
@@ -330,7 +330,7 @@
         grid-template-columns: 1fr;
     }
 
-    .header .categories-nav .category-link{
+    .header .categories-nav .categories-nav__btn{
         grid-column: 1;
     }
 
@@ -356,7 +356,6 @@
     .product .feature-text{
         white-space: normal;
         font-size: 1.5rem;
-
     }
 
     /* POPULAR */
@@ -397,7 +396,6 @@
         flex-direction: row;
         border: none;
         justify-content: space-evenly;
-        /* flex-wrap: wrap; */
 
         padding: 0;
         width: 100vw;
@@ -428,34 +426,33 @@
         grid-template-columns: 4fr 1fr;
     }
 
-    .footer .user-nav,
-    .footer .site-nav{
+    .footer__user-nav,
+    .footer__site-nav{
         display: none;
     }
 
-    .footer .socials-list{
+    .footer__socials-list{
         grid-row: 4;
         grid-column: 1 / span 1;
-        /* flex-direction: column; */
         justify-self: left;
     }
 
-    .footer .footer__address,
-    .footer .footer__phone{
+    .footer__address,
+    .footer__phone{
         font-size: 1.5rem;
         grid-column: 1;
     }
 
-    .footer .footer__phone{
+    .footer__phone{
         grid-row: 2;
         justify-self: left;
     }
 
-    .footer .footer__address{
+    .footer__address{
         grid-row: 3;
     }
 
-    .footer .html-logo{
+    .footer__html-logo{
         grid-column: 2;
     }
 
@@ -469,7 +466,6 @@
     .popular__item{
         width: 11rem;
     }
-
     
     .popular__img-wrapper img{
         transform: scale(0.7);
