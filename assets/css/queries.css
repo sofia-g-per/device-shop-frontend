@@ -65,13 +65,13 @@
         grid-template-columns: 4fr 1fr;
     }
 
-    .header .user-nav,
-    .header .site-nav{
+    .header__user-nav,
+    .header__site-nav{
         display: none;
         grid-template-columns: 1fr;
     }
 
-    .header .search-bar-wrapper{
+    .header__search-bar{
         grid-column: 1/ span 1;
         width: 100%;
     }
@@ -88,12 +88,8 @@
         letter-spacing: 0.2rem;
     }
 
-    .header .search-btn{
+    .search-bar__btn{
         display: none;
-    }
-
-    .search-bar-wrapper{
-        width: 100%;
     }
 
     .header.nav--active{

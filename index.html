@@ -7,42 +7,43 @@
     <title>Device</title>
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/queries.css">
 </head>
 <body>
     <!-- categories--active -->
     <header class="header container">
         <img  class="logo fade-out-btn" src="assets/images/icons/logo.svg" alt="Логотип Device">
-        <form class="search-bar-wrapper" action="get">
-            <input class="search-bar" class="search-bar active-underline" type="text" placeholder="Поиск по сайту">
-            <button class="search-btn">найти</button>
+        <form class="header__search-bar search-bar" action="get">
+            <input class="search-bar__input active-underline" type="text" placeholder="Поиск по сайту" id="search-bar"> 
+            <button class="search-bar__btn">найти</button>
         </form>
         <button class="btn-mobile-nav fade-out-btn">
             <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
             <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
-        <nav class="user-nav">
-            <a class="icon-text-btn fade-out-btn login-btn" href="#">
+        <nav class="header__user-nav user-nav">
+            <a class="user-nav__btn fade-out-btn login-btn" href="#">
                 Войти
             </a>
-            <a class="icon-text-btn fade-out-btn compare-btn" href="#">
+            <a class="user-nav__btn fade-out-btn compare-btn" href="#">
                 Сравнить
             </a>
-            <a class="icon-text-btn fade-out-btn cart-btn" href="#">
+            <a class="user-nav__btn fade-out-btn cart-btn" href="#">
                 Корзина
             </a>
         </nav>
-        <a class="plus-btn site-nav--link fade-out-btn" href="#">
+        <a class="plus-btn site-nav__link fade-out-btn" href="#">
             каталог товаров
         </a>
-        <nav class="site-nav">
-            <a href="#" class="site-nav--link  fade-out-btn">
+        <nav class="header__site-nav site-nav">
+            <a href="#" class="site-nav__link  fade-out-btn">
                 доставка
             </a>
-            <a href="#" class="site-nav--link  fade-out-btn">
+            <a href="#" class="site-nav__link  fade-out-btn">
                 гарантия
             </a>
-            <a href="#" class="site-nav--link  fade-out-btn">
+            <a href="#" class="site-nav__link  fade-out-btn">
                 контакты
             </a>
         </nav>
@@ -288,25 +289,25 @@
     <footer class="footer">
         <img class="logo  fade-out-btn" src="assets/images/icons/logo--yellow.svg" alt="Логотип device">
         <nav class="user-nav">
-            <a class="icon-text-btn fade-out-btn login-btn fade-in-btn" href="#">
+            <a class= fade-out-btn login-btn fade-in-btn" href="#">
                 Войти
             </a>
-            <a class="icon-text-btn fade-out-btn compare-btn fade-in-btn" href="#">
+            <a class= fade-out-btn compare-btn fade-in-btn" href="#">
                 Сравнить
             </a>
-            <a class="icon-text-btn fade-out-btn cart-btn fade-in-btn" href="#">
+            <a class= fade-out-btn cart-btn fade-in-btn" href="#">
                 Корзина
             </a>
         </nav>
         <p class="footer__address">г. Москва, ул. Строителей, 15</p>
         <nav class="site-nav">
-            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+            <a href="#" class="site-nav__link  fade-out-btn fade-out-btn">
                 доставка
             </a>
-            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+            <a href="#" class="site-nav__link  fade-out-btn fade-out-btn">
                 гарантия
             </a>
-            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+            <a href="#" class="site-nav__link  fade-out-btn fade-out-btn">
                 контакты
             </a>
         </nav>
