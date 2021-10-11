@@ -144,11 +144,6 @@ textarea{
 .form__item .form__label{
     margin-bottom: 1rem;
 }
-/* .heading-primary{
-    text-transform: uppercase;
-    font-size: 4.7rem;
-    line-height: 58px;
-} */
 
 .heading-secondary{
     font-size: 4.7rem;
@@ -228,8 +223,7 @@ textarea{
     white-space: nowrap;
 
     width: fit-content;
-    padding: 0 4.2rem;
-    margin: 3rem 0;
+    padding: 3rem 4.2rem;
     position: relative;
     isolation: isolate;
 }

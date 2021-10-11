@@ -59,16 +59,11 @@ PRODUCTS
     align-self: center;
 }
 
-.product h2{
+.product__text-card{
     grid-row: 1;
     grid-column: 2;
     align-self: end;
     padding-top: 11rem;
-}
-
-.product-description{
-    line-height: 2rem;
-    max-width: 55ch;
 }
 
 .product-features{
@@ -230,10 +225,6 @@ SERVICES
     width: 100%;
 }
 
-.service--active h2{
-    padding-bottom: 4rem;
-}
-
 .service{
     background-repeat: no-repeat;
     background-position: right;
@@ -254,11 +245,6 @@ SERVICES
 .service-img{
     grid-row: 1 / span 2;
     grid-column: 2 / span 1;
-}
-
-.service-description{
-    max-width: 50ch;
-    line-height: 3rem;
 }
 
 /* 
@@ -304,10 +290,6 @@ ABOUT US + CONTACTS
     justify-content: space-around;
     gap: 4rem;
     line-height: 2.8rem;
-}
-
-.about-us__column h2{
-    margin: 1rem 0;
 }
 
 .about-us__list{

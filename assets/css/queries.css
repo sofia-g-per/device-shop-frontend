@@ -37,7 +37,7 @@
         width: 90vw;
     }
 
-    .heading-secondary{
+    .text-card__title{
         font-size: 6.5rem;
         letter-spacing: 0.2rem;
     }
@@ -46,10 +46,12 @@
         font-size: 2.3rem;
     }
 
-    .product-description,
-    .service-description,
-    .about-us__text{
+    .text-card__text{
         font-size: 1.8rem;
+        line-height: 1.5;
+        margin: auto;
+        text-align: center;
+        max-width: 50ch;
     }
 
     .line-through-btn{
@@ -155,7 +157,7 @@
     }
 
     .product-header,
-    .product .heading-secondary{
+    .product__text-card{
         grid-column: 1;
     }
 
@@ -163,11 +165,12 @@
         justify-self: right;
     }
 
-    .product .heading-secondary{
+    .product__text-card .text-card__title{
         line-height: 1.1;
         justify-self: left;
         padding-left: 2rem;
     }
+
 
     .product-image {
         grid-row: 2 / -1;
@@ -187,17 +190,11 @@
         font-size: 1.9rem;
     }
 
-    .product-description{
-        line-height: 1.5;
-        text-align: center;
-        max-width: 50ch;
-    }
-
     /* POPULAR */
-
     .popular__item .strong{
         font-size: 1.6rem;
     }
+
     /* SERVICES */
     .services-wrapper{
         gap: 0;
@@ -211,8 +208,9 @@
     .services{
         padding: 0 2rem;
     }
-    .service-description{
+    .service.text-card .text-card__text{
         width: 60%;
+        text-align: left;
         font-size: 1.8rem;
     }
 
@@ -230,10 +228,6 @@
     .about-us__column{
         text-align: center;
         align-items: center;
-    }
-
-    .about-us__text{
-        max-width: 50ch;
     }
 
     .contact-us__form{
@@ -343,10 +337,10 @@
         font-size: 9.4rem;
     }
 
-    .product .heading-secondary{
+    .product__text-card .text-card__title{
         font-size: 2.9rem;
         padding: 0;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
     }
     
     .product-feature .feature-number{
