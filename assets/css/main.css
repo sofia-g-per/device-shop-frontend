@@ -284,22 +284,6 @@ ABOUT US + CONTACTS
     position: relative;
 }
  
-.about-us__column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 4rem;
-    line-height: 2.8rem;
-}
-
-.about-us__list{
-    margin: 2rem 0;
-}
-.about-us__list li{
-    font-family: Gilroy, sans-serif;
-    font-weight: 800;
-    font-size: 1.8rem;
-}
 
 .form-pop-up{
     background-color: white;

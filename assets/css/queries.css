@@ -222,10 +222,9 @@
     /* ABOUT US */
     .section-about-us{
         flex-direction: column;
-
     }
 
-    .about-us__column{
+    .info-card{
         text-align: center;
         align-items: center;
     }

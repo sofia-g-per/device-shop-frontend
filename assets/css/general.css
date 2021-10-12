@@ -158,17 +158,6 @@ textarea{
     letter-spacing: 0.05em;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.list li{
-    display: flex;
-    gap: 2.4rem;
-}
-
 /* горизонтальная линия-выделитель */
 .line{
     background-color: black;
