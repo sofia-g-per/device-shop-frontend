@@ -289,7 +289,6 @@
 }
 
 @media (max-width: 580px){
-
     .logo{
         transform: scale(0.7) translateX(-20%);
     }
@@ -298,6 +297,10 @@
         font-size: 1.8rem;
         letter-spacing: 0.2rem;
         white-space: normal;
+    }
+
+    .line-through-btn::before{
+        height: 100%;
     }
 
     .strong{
@@ -333,7 +336,7 @@
         background: linear-gradient( #F7E296 10%, transparent 10%);
 
     }
-    .product-slde__header .product-num{
+    .product-slide__header__num{
         font-size: 9.4rem;
     }
 
