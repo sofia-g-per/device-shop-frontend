@@ -10,75 +10,7 @@
 тёмный: basic-dark #363636
  */
 
-/*
-========================
-PRODUCTS
-========================
-*/
 
-.product{
-    display: none;
-}
-
-.product--active{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-    column-gap: 4.4rem;
-    row-gap: 3rem;
-
-    position: relative;
-    top: -15rem;
-    padding: 1.1rem 4.4rem 0 3rem;
-}
-
-.product-header{
-    grid-row: 1;
-    grid-column: 2;
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-header hr{
-    margin-top: 3rem;
-}
-
-.product-num{
-    color: white;
-    font-family: 'Gilroy', sans-serif;
-    font-size: 17.9rem;
-    font-weight: 800;
-}
-
-.product-image{
-    grid-row: 1 / -1;
-    align-self: center;
-}
-
-.product__text-card{
-    grid-row: 1;
-    grid-column: 2;
-    align-self: end;
-    padding-top: 11rem;
-}
-
-.product-features{
-    display: flex;
-    gap: 6.4rem;
-    font-family: Gilroy;
-    letter-spacing: 0.1em;
-}
-
-.feature-number{
-    font-size: 3.6rem;
-    white-space: nowrap;
-    margin-bottom: 1.5rem;
-}
-
-.feature-text{
-    font-size: 1.3rem;
-    white-space: nowrap;
-}
 
 /* 
 ========================
@@ -91,8 +23,7 @@ POPULAR
     gap: 4rem;
     justify-items: center;
     width: fit-content;
-}   
-
+}  
 
 /* 
 ========================
