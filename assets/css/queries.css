@@ -7,13 +7,16 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .popular__img-wrapper{
-        margin: 0 auto;
+    .category-card__icon-wrapper{
         height: 16rem;
         width: 100%;
     }
 
-    .services-wrapper{
+    .category-card__title{
+        padding-top: 1rem;
+    }
+
+    .side-slideshow{
         gap: 5rem;
         width: 100vw;
     }
@@ -122,7 +125,7 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-items: end;
-        margin-right: 5rem;
+        padding-right: 5rem;
     }
 
     .header.nav--active .user-nav{
@@ -191,24 +194,24 @@
     }
 
     /* POPULAR */
-    .popular__item .strong{
+    .category-card__title{
         font-size: 1.6rem;
     }
 
     /* SERVICES */
-    .services-wrapper{
+    .side-slideshow{
         gap: 0;
         width: 100vw;
     }
 
-    .services-list{
+    .side-menu{
         min-width: 35vw;
     }
 
-    .services{
+    .slideshow{
         padding: 0 2rem;
     }
-    .service.text-card .text-card__text{
+    .slideshow__slide.text-card .text-card__text{
         width: 60%;
         text-align: left;
         font-size: 1.8rem;
@@ -357,12 +360,12 @@
         gap: 1.5rem;
     }
 
-    .popular__item{
+    .category-card{
         word-wrap: break-word;
     }
 
     /* SERVICES */
-    .services-wrapper{
+    .side-slideshow{
         grid-template-columns: 1fr;
         align-items: end;
         justify-content: center;
@@ -376,15 +379,15 @@
         background: none;
     }
 
-    .service--active h2{
+    /* .service--active h2{
         padding-bottom: 0;
-    }
+    } */
 
-    .service-description{
+    /* .service-description{
         width: 100%;
-    }
+    } */
 
-    .services-list{
+    .side-menu{
         grid-row: 2;
         flex-direction: row;
         border: none;
@@ -395,7 +398,7 @@
         background: linear-gradient( #E5E5E5 30%, white 30%);
     }
 
-    .services-btn{
+    .side-menu__btn{
         display: flex;
         justify-content: center;
         margin-right: 0vh;
@@ -404,8 +407,8 @@
         padding: 0.2rem;
     }
 
-    .services-btn:active, 
-    .services-btn--active {
+    .side-menu__btn:active, 
+    .side-menu__btn--active {
         padding: 0 2rem;
     }
 
@@ -452,15 +455,15 @@
 }
 
 @media (max-width: 400px){
-    .popular__img-wrapper{
+    .category-card__icon-wrapper{
         height: 11rem;
     }
 
-    .popular__item{
+    .category-card{
         width: 11rem;
     }
     
-    .popular__img-wrapper img{
+    .category-card__icon{
         transform: scale(0.7);
     }
 
