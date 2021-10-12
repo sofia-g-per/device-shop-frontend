@@ -81,7 +81,7 @@
         width: 100%;
     }
     
-    .header .btn-mobile-nav{
+    .btn-mobile-nav{
         display: block;
         grid-column: 2;
         grid-row: 2;
@@ -166,7 +166,7 @@
         justify-self: right;
     }
 
-    .product__text-card .text-card__title{
+    .product-slide__text-card .text-card__title{
         line-height: 1.1;
         justify-self: left;
         padding-left: 2rem;

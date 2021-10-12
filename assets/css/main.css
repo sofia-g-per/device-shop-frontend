@@ -10,10 +10,6 @@
 тёмный: basic-dark #363636
  */
 
- .side-sldeshow__slideshow__text{
-    text-align: left;
- }
-
 /* 
 ========================
 POPULAR
@@ -36,15 +32,6 @@ SERVICES
     background: linear-gradient(to top, #E5E5E5 67%, transparent 67%);
 }
 
-.services-list,
-.services{
-    padding: 7rem 0;
-}
-
-.service{
-
-}
-
 .service--delivery{
     background-image: url("/assets/images/services/delivery.svg");
     background-repeat: no-repeat;
@@ -61,32 +48,6 @@ SERVICES
     background-image: url("/assets/images/services/credit.svg");
         background-repeat: no-repeat;
     background-position: right;
-}
-
-/* 
-========================
-ABOUT US + CONTACTS
-========================
-*/
-.logos-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
-}
-
-.logo-wrapper>img{
-    max-width: 100%;
-}
-
-.logo-wrapper>img{
-    transition: all 0.5s;
-    filter: saturate(0);
-    opacity: 0.15;
-}
-
-.logo-wrapper>img:hover{
-    filter: saturate(1);
-    opacity: 1;
 }
 
 /* 
