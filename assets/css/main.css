@@ -10,7 +10,9 @@
 тёмный: basic-dark #363636
  */
 
-
+ .side-sldeshow__slideshow__text{
+    text-align: left;
+ }
 
 /* 
 ========================

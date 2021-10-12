@@ -49,7 +49,7 @@
         font-size: 2.3rem;
     }
 
-    .text-card__text{
+    .text-card__text:not( .text-card__text--left){
         font-size: 1.8rem;
         line-height: 1.5;
         margin: auto;
@@ -378,6 +378,12 @@
 
     .service{
         background: none;
+    }
+
+    .service--delivery,
+    .service--warranty,
+    .service--credit{
+        background-image: none;
     }
 
     /* .service--active h2{
