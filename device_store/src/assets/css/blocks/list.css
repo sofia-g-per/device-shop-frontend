@@ -1,0 +1,14 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list__item{
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem; 
+    
+    display: flex;
+    gap: 2.4rem;
+}

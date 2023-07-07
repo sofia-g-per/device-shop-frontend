@@ -1,0 +1,12 @@
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    line-height: 2.8rem;
+}
+
+.info-card__list{
+    padding: 2rem 0;
+}
+

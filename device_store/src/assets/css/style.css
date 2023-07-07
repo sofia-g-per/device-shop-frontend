@@ -1,0 +1,17 @@
+@import "blocks/header.css";
+@import "blocks/search-bar.css";
+@import "blocks/site-nav.css";
+@import "blocks/user-nav.css";
+@import "blocks/categories.css";
+@import "blocks/text-card.css";
+@import "blocks/info-card.css";
+@import "blocks/features.css";
+@import "blocks/category-card.css";
+@import "blocks/product-slide.css";
+@import "blocks/list.css";
+@import "blocks/carousel.css";
+@import "blocks/slideshow.css";
+@import "blocks/side-slideshow.css";
+@import "blocks/side-menu.css";
+@import "blocks/logos-container.css";
+@import "blocks/footer.css";

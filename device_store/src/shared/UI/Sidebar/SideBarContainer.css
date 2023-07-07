@@ -1,0 +1,11 @@
+.side-bar-container{
+    display: flex;
+}
+
+.side-bar__side-bar{
+    flex-grow: 0;
+}
+
+.side-bar__main-content{
+    flex-grow: 1;
+}

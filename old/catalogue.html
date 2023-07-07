@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/catalogue.css">
+    <link rel="stylesheet" href="assets/css/queries.css">
+</head>
+<body>
+    <header class="header header-pd catalogue-header container">
+        <img  class="logo fade-out-btn" src="assets/images/icons/logo.svg" alt="Логотип Device">
+        <form class="search-bar-wrapper" action="get">
+            <input class="search-bar" class="search-bar active-underline" type="text" placeholder="Поиск по сайту">
+            <button class="search-btn">найти</button>
+        </form>
+        <button class="btn-mobile-nav fade-out-btn">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+        <nav class="user-nav">
+            <a class="icon-text-btn fade-out-btn login-btn" href="#">
+                Войти
+            </a>
+            <a class="icon-text-btn fade-out-btn compare-btn" href="#">
+                Сравнить
+            </a>
+            <a class="icon-text-btn fade-out-btn cart-btn" href="#">
+                Корзина
+            </a>
+        </nav>
+        <a class="plus-btn site-nav--link fade-out-btn" href="#">
+            каталог товаров
+        </a>
+        <nav class="site-nav">
+            <a href="#" class="site-nav--link  fade-out-btn">
+                доставка
+            </a>
+            <a href="#" class="site-nav--link  fade-out-btn">
+                гарантия
+            </a>
+            <a href="#" class="site-nav--link  fade-out-btn">
+                контакты
+            </a>
+        </nav>
+        
+        <nav class="categories-nav">
+            <a class="category-link fade-out-btn" href="#">Вирутальная реальность</a>
+            <a class="category-link fade-out-btn" href="#">Моноподы для селфи</a>
+            <a class="category-link fade-out-btn" href="#">Экшн-камеры</a>
+            <a class="category-link fade-out-btn" href="#">Фитнес-браслеты</a>
+            <a class="category-link fade-out-btn" href="#">Умные часы</a>
+            <a class="category-link fade-out-btn" href="#">Квадрокоптер</a>
+        </nav>
+    </header>
+    <header class="page-title header-pd container">
+        <h1 class="heading-secondary">Моноподы для селфи</h1>
+        <nav class="page-path">
+            <a class="page-path__item" href="#">
+                <p>Главная</p> 
+            </a>
+            <a class="page-path__item" href="#">
+                <p>Каталог товаров</p> 
+            </a>
+            <a class="page-path__item" href="#">
+                <p>Моноподы для селфи</p> 
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="catalogue-content">
+            <button class="catalogue-btn filter-btn strong">
+                Фильтр
+            </button>
+            <div class="sort-options">
+                <button class="catalogue-btn strong">
+                    Сортировка:
+                </button>
+                <button class="sort-option btn--active fade-in-btn">По цене</button>
+                <button class="sort-option  fade-in-btn">По типу</button>
+                <button class="sort-option  fade-in-btn">По популярности</button>
+            </div>
+            <div class="filters-wrapper">
+                <form class="filters-form">
+                    <hr class="filter-line">
+                    <div class="filter__option">
+                        <h4 class="strong">Стоимость</h4>
+                        <input class="" type="range" min="0" max="5000">
+                    </div>
+                    <hr class="filter-line">
+                    <div class="filter__option filter-checkbox">
+                        <h4 class="strong">Цвет</h4>
+                        <input class="checkbox" type="checkbox" id="filter-clr-black" value="black">
+                        <label for="filter-clr-black">
+                            <span>Чёрный </span>
+                        </label>
+
+                        <input class="checkbox" type="checkbox" id="filter-clr-white" value="white">
+                        <label for="filter-clr-white">
+                            <span>Белый </span>
+                        </label>  
+                        <input class="checkbox" type="checkbox" id="filter-clr-blue" value="blue">
+
+                        <label for="filter-clr-blue">
+                            <span>Синий </span>
+                        </label>   
+                        <input class="checkbox" type="checkbox" id="filter-clr-red" value="red">
+
+                        <label for="filter-clr-red">
+                            <span>Красный </span>
+                        </label>   
+
+                        <input class="checkbox" type="checkbox" id="filter-clr-pink" value="pink">
+
+                        <label for="filter-clr-pink">
+                            <span>Розовый </span>
+                        </label>
+
+                    </div>
+                    <hr class="filter-line">
+                    <div class="filter__option filter-radio">
+                        <h4 class="strong">Bluetooth</h4>
+                        <input class="radio-btn" type="radio" id="filter-bluetooth-true">
+                        <label for="filter-bluetooth-true">Есть</label>
+                        <input class="radio-btn" type="radio" id="filter-bluetooth-false">
+                        <label for="filter-bluetooth-false">Нет</label>
+                    </div>
+                    <button class="line-through-btn" type="submit">Показать</button>
+                </form>
+            </div>
+            <div class="catalogue-products">
+                <article class="product-wrapper">
+                    <img class="product__img" src="/assets/images/products/monopodes/amateur.png" alt="">
+                    <div class="product__text">
+                        <p class="product-title strong">
+                            Любительская селфи-палка
+                        </p>
+                        <p class="product-price">
+                            1 100 руб. 
+                        </p>
+                    </div>
+                </article>
+                <article class="product-wrapper">
+                    <img class="product__img" src="/assets/images/products/monopodes/professional.png" alt="">
+                    <div class="product__text">
+                        <p class="product-title strong">
+                            Профессиональная селфи-палка
+                        </p>
+                        <p class="product-price">
+                            1 500 руб. 
+                        </p>
+                    </div>
+                </article>
+                <article class="product-wrapper">
+                    <img class="product__img" src="/assets/images/products/monopodes/waterproof.png" alt="">
+                    <div class="product__text">
+                        <p class="product-title strong">
+                            Непотопленная селфи-палка
+                        </p>
+                        <p class="product-price">
+                            1 500 руб. 
+                        </p>
+                    </div>
+                </article>
+                <article class="product-wrapper">
+                    <img class="product__img" src="/assets/images/products/monopodes/follow-me.png" alt="">
+                    <div class="product__text">
+                        <p class="product-title strong">
+                            Селфи-палка "Следуй за мной"
+                        </p>
+                        <p class="product-price">
+                            1 900 руб. 
+                        </p>
+                    </div>
+                </article>
+                <footer class="catalogue-footer">
+                    <button class="strong">
+                        Назад
+                    </button>
+                    <div class="footer__pages">
+                        <button class="footer-page-btn fade-in-btn btn--active">
+                            1
+                        </button>
+                        <button class="footer-page-btn fade-in-btn">
+                            2
+                        </button>
+                        <button class="footer-page-btn fade-in-btn">
+                            3
+                        </button>
+                    </div>
+                    <button class="strong">
+                        Вперёд
+                    </button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <img class="logo  fade-out-btn" src="assets/images/icons/logo--yellow.svg" alt="Логотип device">
+        <nav class="user-nav">
+            <a class="icon-text-btn fade-out-btn login-btn fade-in-btn" href="#">
+                Войти
+            </a>
+            <a class="icon-text-btn fade-out-btn compare-btn fade-in-btn" href="#">
+                Сравнить
+            </a>
+            <a class="icon-text-btn fade-out-btn cart-btn fade-in-btn" href="#">
+                Корзина
+            </a>
+        </nav>
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <nav class="site-nav">
+            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+                доставка
+            </a>
+            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+                гарантия
+            </a>
+            <a href="#" class="site-nav--link  fade-out-btn fade-out-btn">
+                контакты
+            </a>
+        </nav>
+        <a href="tel:+74954959595" class="footer__phone">
+            Тел: +7(495) 495-95-95
+        </a>
+        <hr class="line line--yellow">
+        <div class="socials-list">
+            <a class="socials__item fade-in-btn" href="#">
+                <img src="assets/images/icons/facebook.svg" alt="Фейсбук">
+            </a>
+            <a class="socials__item fade-in-btn" href="#">
+                <img src="assets/images/icons/instagram.svg" alt="Инстаграм">
+            </a>
+            <a class="socials__item fade-in-btn" href="#">
+                <img src="assets/images/icons/twitter.svg" alt="Твиттер">
+            </a>
+        </div>
+        <img class="html-logo fade-out-btn" src="assets/images/icons/logo-html.svg" alt="Логотип HTML Academy">
+    </footer>
+</body>
+</html>

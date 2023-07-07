@@ -1,0 +1,17 @@
+.text-card{
+    width: 100%;
+}
+
+.text-card__title{
+    font-size: 4.7rem;
+    line-height: 5.8rem;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    padding-bottom: 3rem;
+}
+
+.text-card__text{
+    padding: 1rem 0;
+    max-width: 60ch;
+    line-height: 3rem;
+}

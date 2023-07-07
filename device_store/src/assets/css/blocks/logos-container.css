@@ -1,0 +1,20 @@
+.logos-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+}
+
+.logos-container__logo__logo-icon{
+    max-width: 100%;
+}
+
+.logos-container__logo__logo-icon{
+    transition: all 0.5s;
+    filter: saturate(0);
+    opacity: 0.15;
+}
+
+.logos-container__logo__logo-icon:hover{
+    filter: saturate(1);
+    opacity: 1;
+}

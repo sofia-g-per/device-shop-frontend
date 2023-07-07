@@ -1,0 +1,63 @@
+.side-menu{
+    border-right: solid 0.8rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20vw;
+}
+
+.side-menu__btn{
+    display: block;
+    width: 100%;
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    isolation: isolate;
+    z-index: 0;
+    position: relative;
+}
+
+.side-menu__btn p{
+    width: min-content;
+    padding: 1rem;
+    background: linear-gradient(transparent 42.5%, #F0C52E 42.5%, #F0C52E 57.5%, transparent 57.5%);
+}
+
+.side-menu__btn:not(.side-menu__btn--active)::before{
+    position: absolute;
+    visibility: hidden;
+    content: "";
+    background: #F0C52E;
+    width: 0.3rem;
+    height: 13%;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    z-index: -1;
+}
+.side-menu__btn:not(.side-menu__btn--active):hover::before{
+    visibility: visible;
+    height: 2.2rem;
+    width: 100%;
+    transform: translate(0%, -50%);
+}
+
+.side-menu__btn:active,
+.side-menu__btn--active{
+    background: black;
+    width: 100%;
+    color: #F7E296;
+    text-align: left;
+}
+
+.side-menu__btn:active p,
+.side-menu__btn--active p,
+.side-menu__btn:active::before{
+    background: none;
+}

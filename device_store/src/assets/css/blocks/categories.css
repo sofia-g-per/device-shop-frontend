@@ -1,0 +1,37 @@
+.categories-btn{
+    background: url("/assets/images/icons/icon_plus.svg") right no-repeat;
+    width: fit-content;
+    padding-right: 3rem;
+    white-space: nowrap;
+}
+
+.categories-nav{
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    height: 0%;
+}
+
+.header.categories--active{
+    height: fit-content;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    gap: 2rem;
+    background: #F7E296;
+    z-index: 10;
+}
+
+.header.categories--active .categories-nav{
+    opacity: 1;
+    display: visible;
+    pointer-events: all;
+    z-index: 10;
+}
+
+.categories-nav__btn:last-child{
+    grid-column: 3 / span 1;
+}
+

@@ -1,0 +1,10 @@
+.side-slideshow{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: start;
+    gap: 11.6rem;
+}
+
+.side-slideshow__slideshow{
+    width: 100%;
+}

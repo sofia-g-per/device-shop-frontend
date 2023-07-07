@@ -1,0 +1,23 @@
+.site-nav,
+.user-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.site-nav{
+    gap: 3.8rem;
+}
+
+.site-nav__link{
+    font-family: "Gilroy", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    padding: 1rem 0;
+}
+
+.site-nav .site-nav__link:last-child{
+    justify-self: end;
+}

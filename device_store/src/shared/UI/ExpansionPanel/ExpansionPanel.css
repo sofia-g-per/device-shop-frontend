@@ -1,0 +1,10 @@
+.expansion-panel{
+    overflow: hidden;
+    margin-top: -100%;
+    transition: all 1s;
+}
+
+.expansion-panel--open{
+    margin-top: 0;
+
+}

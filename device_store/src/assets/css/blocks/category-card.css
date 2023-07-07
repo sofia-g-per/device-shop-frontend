@@ -1,0 +1,34 @@
+.category-card{
+    width: 16rem;
+}
+
+.category-card *{
+    transition: all 0.5s;
+}
+
+.category-card__icon-wrapper{
+    height: 16rem;
+    background-color: #F7E296;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.category-card__title{
+    padding-top: 3rem;
+}
+
+.category-card:hover .category-card__icon-wrapper,
+.category-card:target .category-card__icon-wrapper{
+    background-color: #F0C52E;
+}
+
+.category-card:active .category-card__icon-wrapper{
+    background-color: #F0C52E;
+}
+
+.category-card:active .category-card__icon,
+.category-card:active .category-card__title{
+    opacity: 0.3;
+}
+
